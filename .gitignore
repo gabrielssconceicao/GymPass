@@ -1,4 +1,9 @@
 node_modules
 build
 .env
+.env.local
 AULAS.md
+
+/generated/prisma
+/generated/prisma
+/prisma/db
