@@ -25,7 +25,7 @@ export async function register(req: FastifyRequest, rep: FastifyReply) {
     if (err instanceof UserAlreadyExistsError) {
       return rep.status(409).send({ message: err.message })
     }
-    return rep.status(500).send()
+    throw err
   }
 
   return rep.status(201).send()
