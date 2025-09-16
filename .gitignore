@@ -3,7 +3,7 @@ build
 .env
 .env.local
 AULAS.md
-
+*.http
 /generated/prisma
 /generated/prisma
 /prisma/db
