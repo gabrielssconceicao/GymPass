@@ -4,6 +4,8 @@ build
 .env.local
 AULAS.md
 *.http
+coverage
+
 /generated/prisma
 /generated/prisma
 /prisma/db
