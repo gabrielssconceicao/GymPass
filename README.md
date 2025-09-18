@@ -26,6 +26,6 @@ GymPass style app
 ## RHFs (Requesitos não-funcionais)
 
 - [x] A senha do usuario precisa estar criptografada
-- [ ] Os dados da aplicação precisam estar persistidos em um banco PostgreSQL
+- [x] Os dados da aplicação precisam estar persistidos em um banco PostgreSQL
 - [ ] Todas listas de dados precisam estar paginadas com 20 item por página
 - [ ] O usuário deve ser identificado por um JWT (JSON Web Token)

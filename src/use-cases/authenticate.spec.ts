@@ -13,7 +13,7 @@ let name: string
 let usersRepository: InMemoryUsersRepository
 let sut: AuthenticateUseCase
 
-describe('Register Use Case', () => {
+describe('Authenticate Use Case', () => {
   beforeEach(() => {
     email = 'johndoe@example.com'
     password = '123456'
