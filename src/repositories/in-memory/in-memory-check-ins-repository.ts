@@ -1,4 +1,5 @@
-import { randomUUID } from 'crypto'
+import { randomUUID } from 'node:crypto'
+
 import { CheckIn, Prisma } from 'generated/prisma'
 
 import { CheckInsRepository } from '../check-ins-repository'
@@ -14,7 +15,9 @@ export class InMemoryCheckInsRepository implements CheckInsRepository {
       validated_at: data.validated_at ? new Date(data.validated_at) : null,
       created_at: new Date(),
     }
+
     this.items.push(checkIn)
+
     return checkIn
   }
 }

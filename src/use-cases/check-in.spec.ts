@@ -4,13 +4,13 @@ import { InMemoryCheckInsRepository } from '@/repositories/in-memory/in-memory-c
 
 import { CheckInUseCase } from './check-in'
 
-let usersRepository: InMemoryCheckInsRepository
+let checkInsRepository: InMemoryCheckInsRepository
 let sut: CheckInUseCase
 
 describe('Check-in Use Case', () => {
   beforeEach(() => {
-    usersRepository = new InMemoryCheckInsRepository()
-    sut = new CheckInUseCase(usersRepository)
+    checkInsRepository = new InMemoryCheckInsRepository()
+    sut = new CheckInUseCase(checkInsRepository)
   })
 
   it('should be able to check in', async () => {
