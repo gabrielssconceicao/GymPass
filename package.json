@@ -12,10 +12,10 @@
     "test:watch": "vitest --dir src/use-cases ",
     "pretest:e2e": "npm run test:create-prisma-environment && npm run test:install-prisma-environment",
     "test:e2e": "vitest run --dir src/http",
+    "test:e2e:watch": "vitest --dir src/http",
     "test:coverage": "vitest --coverage",
     "test:create-prisma-environment": "cd prisma/vitest-environment-prisma && npm link",
     "test:install-prisma-environment": "npm link vitest-environment-prisma"
-    
   },
   "repository": {
     "type": "git",
@@ -33,6 +33,7 @@
     "@eslint/js": "9.35.0",
     "@types/bcryptjs": "2.4.6",
     "@types/node": "24.3.1",
+    "@types/supertest": "6.0.3",
     "@vitest/coverage-v8": "3.2.4",
     "eslint": "9.35.0",
     "eslint-plugin-prettier": "5.5.4",
@@ -40,6 +41,7 @@
     "globals": "16.4.0",
     "jiti": "2.5.1",
     "prisma": "6.16.1",
+    "supertest": "7.1.4",
     "tsup": "8.5.0",
     "tsx": "4.20.5",
     "typescript": "5.9.2",
