@@ -3,7 +3,7 @@ import { afterAll, beforeAll, describe, expect, it } from 'vitest'
 
 import { app } from '@/app'
 
-describe.skip('Authenticate (E2E)', () => {
+describe('Authenticate (E2E)', () => {
   beforeAll(async () => {
     await app.ready()
   })

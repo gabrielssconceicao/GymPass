@@ -5,12 +5,12 @@ import { makeCreateGymUseCase } from '@/use-cases/factories/make-create-gym-use-
 export async function create(req: FastifyRequest, rep: FastifyReply) {
   const creteGymBodySchema = z.object({
     title: z.string(),
-    description: z.email().nullable(),
-    phone: z.string().min(6).nullable(),
-    latitude: z.number().refine((value) => {
+    description: z.string().nullable(),
+    phone: z.string().nullable(),
+    latitude: z.coerce.number().refine((value) => {
       return Math.abs(value) <= 90
     }),
-    longitude: z.number().refine((value) => {
+    longitude: z.coerce.number().refine((value) => {
       return Math.abs(value) <= 180
     }),
   })
